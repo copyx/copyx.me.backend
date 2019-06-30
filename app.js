@@ -12,7 +12,7 @@ app.use(cors({
     origin: process.env.CORS_ORIGIN
 }));
 
-app.use(logger('dev'));
+app.use(logger('combined'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
